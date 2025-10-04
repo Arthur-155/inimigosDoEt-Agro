@@ -1,0 +1,65 @@
+body{
+    width: 100%;
+    display: flex;
+}
+
+img, .imagem-fase1{
+    width: 800px;
+}
+
+.icone-loja{
+    width: 30px;
+}
+
+.fundo-botao-loja{
+    background-color: white;
+}
+
+.fundo-botao-manual{
+    background-color: #fff;
+}
+
+.fundo-botao-loja:hover{
+    background-color: #89C819;
+}
+
+div .imagem-fase1{
+    border-radius: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;                            
+  justify-content: center;   
+  align-items: center;                               
+  width: 80%;   
+  justify-content: left;                         
+}
+
+.cards img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+
+/* MANUAL */
+
+.icone-manual{
+    width: 30px;
+}
+
+.manual{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    align-items: center;
+    text-align: left;
+}
+
+.fundo-botao-manual:hover{
+    background-color: #89C819;
+}
+
