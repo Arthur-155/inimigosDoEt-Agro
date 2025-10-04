@@ -1,8 +1,16 @@
+body{
+  width: 100%;
+}
+
+html{
+  width: 100%;
+}
+
 #root {
-  max-width: 1280px;
+  min-width: 10vh;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: end;
 }
 
 .logo {
@@ -18,25 +26,19 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+div.button-theme {
+  position: fixed; 
+  top: 1rem;      
+  left: 1rem;       
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.telaDoJogo{
+  justify-content: center;
+  align-items: center;
+  left: 3rem;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

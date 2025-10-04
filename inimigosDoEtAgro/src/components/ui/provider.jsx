@@ -1,16 +1,18 @@
 'use client'
-
 import { ChakraProvider, defaultSystem } from '@chakra-ui/react'
-import { ColorModeProvider } from './color-mode'
 import { ThemeProvider } from 'next-themes'
-import React from 'react'
+import { useColorMode, LightMode, DarkMode } from './color-mode'
 
+function RootTheming({ children }) {
+  const { colorMode } = useColorMode()
+  return colorMode === 'dark' ? <DarkMode>{children}</DarkMode> : <LightMode>{children}</LightMode>
+}
 
-export function Provider({children}) {
+export function Provider({ children }) {
   return (
     <ChakraProvider value={defaultSystem}>
-      <ThemeProvider attribute = 'class' disableTransitionOnChange>
-        {children}
+      <ThemeProvider attribute="class" disableTransitionOnChange>
+        <RootTheming>{children}</RootTheming>
       </ThemeProvider>
     </ChakraProvider>
   )

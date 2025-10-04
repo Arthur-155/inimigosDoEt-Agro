@@ -10,7 +10,6 @@ if (!container) throw new Error('#root não encontrado no index.html')
 createRoot(container).render(
   <React.StrictMode>
     <Provider>
-      <h1>das</h1>
       <App />
     </Provider>
   </React.StrictMode>
