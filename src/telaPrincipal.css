@@ -1,10 +1,16 @@
 body{
     width: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 img, .imagem-fase1{
-    width: 800px;
+    width: 500px;
+}
+
+.icone-seta{
+    cursor: pointer;
+    width: 30px;
 }
 
 .icone-loja{
@@ -33,7 +39,7 @@ div .imagem-fase1{
   gap: 10px;                            
   justify-content: center;   
   align-items: center;                               
-  width: 80%;   
+  width: 100%;   
   justify-content: left;                         
 }
 
@@ -60,6 +66,30 @@ div .imagem-fase1{
 }
 
 .fundo-botao-manual:hover{
+    background-color: #89C819;
+}
+
+.contador-dias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-plantar{
+    background-color: #fff;
+    color: #000;
+}
+
+.button-plantar:hover{
+    background-color: #89C819;
+}
+
+.button-colher{
+    background-color: #fff;
+    color: #000;
+}
+
+.button-colher:hover{
     background-color: #89C819;
 }
 
