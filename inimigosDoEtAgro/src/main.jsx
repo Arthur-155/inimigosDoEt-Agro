@@ -1,13 +1,17 @@
-import { StrictMode } from 'react'
+import * as React from 'react'
 import { createRoot } from 'react-dom/client'
-import {provider} from "@/components/ui/provider"
+import {Provider} from "./components/ui/provider.jsx"
 import './index.css'
 import App from './App.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const container = document.getElementById('root')
+if (!container) throw new Error('#root não encontrado no index.html')
+
+createRoot(container).render(
   <React.StrictMode>
-    <provider>
-    <App />
-    </provider>
-  </React.StrictMode>,
+    <Provider>
+      <h1>das</h1>
+      <App />
+    </Provider>
+  </React.StrictMode>
 )
