@@ -10,7 +10,6 @@ export default function App() {
         {/* {<AlertClosedComponent status= "info" title="teste">
           não pode fazer essa ação!
         </AlertClosedComponent>} */}
-        <ColorModeButton /> 
       </div>
       <div className="telaDoJogo">
         <TelaPrincipal />

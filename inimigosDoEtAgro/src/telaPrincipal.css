@@ -15,6 +15,10 @@ img, .imagem-fase1{
     background-color: white;
 }
 
+.fundo-botao-manual{
+    background-color: #fff;
+}
+
 .fundo-botao-loja:hover{
     background-color: #89C819;
 }
@@ -39,4 +43,23 @@ div .imagem-fase1{
   display: block;
 }
 
+
+/* MANUAL */
+
+.icone-manual{
+    width: 30px;
+}
+
+.manual{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    align-items: center;
+    text-align: left;
+}
+
+.fundo-botao-manual:hover{
+    background-color: #89C819;
+}
 
